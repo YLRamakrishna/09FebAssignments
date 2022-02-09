@@ -1,0 +1,19 @@
+/* Assignment-1 Y.L.Ramakishna AWDC KKD Pointer Arithmetic*/
+#include <stdio.h>
+int main()
+{
+    int a;
+    int *p;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    p=&a;
+    printf("The initial value of a is=%d\n:",*p);
+    *p=*p+5;
+    printf("The value after adding 5 is=%d\n",*p);
+    *p=*p-2;
+    printf("The value after subtracting 2 is=%d\n",*p);
+    *p=++(*p);
+    printf("The value after increment is=%d\n",*p);
+    *p=--(*p);
+    printf("The value after decrement is=%d\n",*p);
+}
