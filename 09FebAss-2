@@ -1,0 +1,18 @@
+/* Assignment-2* Y.L.Ramakrishna AWDCKKD Sum of n numbers using ointer array*/
+#include<stdio.h>
+int main()
+{
+int a[20],n,i,x,sum=0;
+printf("enter array size:");
+scanf("%d",&n);
+printf("array elements are\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+int *p=a;
+for(i=0;i<n;i++)
+{
+    x=*(p+i);
+    sum=sum+x;
+}
+printf("%d",sum);
+}
